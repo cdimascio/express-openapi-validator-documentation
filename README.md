@@ -11,3 +11,8 @@ pip install mkdocs-material
 ```shell
 mkdocs serve
 ```
+
+## Manual Deploy
+```
+mkdocs gh-deploy --force
+```
