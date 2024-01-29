@@ -1,3 +1,45 @@
 site_name: express-openapi-validator
 theme:
   name: material
+  palette:
+    scheme: slate
+    # primary: indigo
+  features:
+    - navigation.sections
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: 'index.md'
+  - Getting started: 
+    - gc-installation.md
+    - gc-quick-start.md 
+  - Usage and Options:
+    - usage-options-summary.md
+    - usage-api-spec.md
+    - usage-validate-requests.md
+    - usage-validate-responses.md
+    - usage-validate-security.md
+    - usage-validate-api-spec.md
+    - usage-formats.md
+    - usage-unknown-formats.md
+
+  - Guides:
+    - Standard: guide-standard.md
+    - Operation Handlers: guide-operation-handlers.md
+
+  - Validation Output:
+    - example responses: validation-curl.md
+  - About:
+    - 'License': 'license.md'
+    - 'Release Notes': 'release-notes.md'
