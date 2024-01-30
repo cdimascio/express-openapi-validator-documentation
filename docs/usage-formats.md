@@ -4,7 +4,7 @@ title: ▪️ formats
 
 Defines a list of custom formats.
 
-!!! note
+!!! Option-schema
     ```javascript
     formats: [{ name, type, validate: (v): boolean }]
     ```

@@ -1,5 +1,9 @@
 site_name: express-openapi-validator
 theme:
+  # logo: assets/logo.png
+  icon:
+    logo: fontawesome/solid/check-double
+      
   name: material
   palette:
     scheme: slate
@@ -33,6 +37,13 @@ nav:
     - usage-validate-api-spec.md
     - usage-formats.md
     - usage-unknown-formats.md
+    - usage-serdes.md
+    - usage-operation-handlers.md
+    - usage-ignore-paths.md
+    - usage-ignore-undocumented.md
+    - usage-file-uploader.md
+    - usage-ref-parser.md
+    - usage-coerce-types.md
 
   - Guides:
     - Standard: guide-standard.md

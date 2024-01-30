@@ -1,26 +1,18 @@
 ---
-title: ▪️ coerceTypes (optional)
+title: ▪️ coerceTypes (deprecated)
 ---
 
-  Determines whether the validator will coerce the request body. Request query and path params, headers, cookies are coerced by default and this setting does not affect that.
+!!! warning
+    `coerceTypes` is deprecated in favor of [validateRequests.coerceTypes](usage-validate-requests.md) and [validateResponses.coerceTypes](usage-validate-responses.md)
 
-  See [additional details](assets/docs/coercion.md) on coercion and limitiations.
+Determines whether the validator should coerce value types to match the those defined in the OpenAPI spec. This option applies **only** to path params, query strings, headers, and cookies. _It is **highly unlikely** that you will want to disable this. As such this option is deprecated and will be removed in the next major version_
 
-## Options Schema
+!!! Option-schema
 ```javascript
-coerceTypes: false | true | 'array
+    coerceTypes: true | 'array'
 ```
 
-## `coerceTypes` (optional)
+## coerceTypes (optional) - _deprecated_
 
-  - `true` - coerce scalar data types.
-  - `false` - (**default**) do not coerce types. (more strict, safer)
-  - `"array"` - in addition to coercions between scalar types, coerce scalar data to an array with one element and vice versa (as required by the schema).
-
-  For example:
-
-  ```javascript
-  validateRequests: {
-    coerceTypes: true,
-  }
-  ```
+- `true` (**default**) - coerce scalar data types.
+- `"array"` - in addition to coercions between scalar types, coerce scalar data to an array with one element and vice versa (as required by the schema).
