@@ -1,5 +1,5 @@
 ---
-title: Summary of Options
+title: All Options
 ---
 ## OpenApiValidator Middleware Options
 
