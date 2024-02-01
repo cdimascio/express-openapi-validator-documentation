@@ -1,5 +1,5 @@
 ---
-title: Standard Guide
+title: Validation API Guide
 ---
 
 # Standard Guide

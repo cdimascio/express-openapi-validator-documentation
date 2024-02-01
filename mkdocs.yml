@@ -3,13 +3,18 @@ theme:
   # logo: assets/logo.png
   icon:
     logo: fontawesome/solid/check-double
-      
   name: material
   palette:
     scheme: slate
     # primary: indigo
   features:
-    - navigation.sections
+    # - navigation.sections
+    - navigation.tracking
+    - content.tabs.link
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.expand
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -22,35 +27,47 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
+  - pymdownx.tabbed:
+      alternate_style: true
 nav:
-  - Home: 'index.md'
+  - Home: 
+    - index.md
   - Getting started: 
     - gc-installation.md
     - gc-quick-start.md 
-  - Usage and Options:
-    - usage-options-summary.md
-    - usage-api-spec.md
-    - usage-validate-requests.md
-    - usage-validate-responses.md
-    - usage-validate-security.md
-    - usage-validate-api-spec.md
-    - usage-formats.md
-    - usage-unknown-formats.md
-    - usage-serdes.md
-    - usage-operation-handlers.md
-    - usage-ignore-paths.md
-    - usage-ignore-undocumented.md
-    - usage-file-uploader.md
-    - usage-ref-parser.md
-    - usage-coerce-types.md
+    - gc-guides.md
+    - faq.md
 
+  - Reference:
+    - Docs:
+      - ref-base-url.md
+      - ref-security-handlers.md
+      - Operation Handlers: guide-operation-handlers.md
+      - Multiple API Specs: guide-multiple-specs.md
+      - validation-curl.md
+    - Options:
+      - usage-options-summary.md
+      - usage-api-spec.md
+      - usage-validate-requests.md
+      - usage-validate-responses.md
+      - usage-validate-security.md
+      - usage-validate-api-spec.md
+      - usage-formats.md
+      - usage-unknown-formats.md
+      - usage-serdes.md
+      - usage-operation-handlers.md
+      - usage-ignore-paths.md
+      - usage-ignore-undocumented.md
+      - usage-file-uploader.md
+      - usage-ref-parser.md
+      - usage-coerce-types.md
+    
   - Guides:
-    - Standard: guide-standard.md
+    - Standard API Server: guide-standard.md
     - Operation Handlers: guide-operation-handlers.md
+    - Multiple API Specs: guide-multiple-specs.md
 
-  - Validation Output:
-    - example responses: validation-curl.md
+
   - About:
-    - 'License': 'license.md'
-    - 'Release Notes': 'release-notes.md'
+    - license.md
+    - about-who-are-we.md

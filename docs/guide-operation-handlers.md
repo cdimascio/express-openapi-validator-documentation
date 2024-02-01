@@ -1,4 +1,6 @@
-# Example Express API Server with Operation Handlers
+---
+title: API Server with Operation Handlers
+---
 
 If you prefer not to manually map your OpenAPI endpoints to Express handler functions, `express-openapi-validator` can do it for you automatically! This example demonstrates how to utilize express-openapi-validator's OpenAPI `x-eov-operation-*` vendor extensions.
 
