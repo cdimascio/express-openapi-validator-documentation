@@ -24,10 +24,13 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
-  - Home: 'index.md'
+  - Home: 
+    - index.md
+
   - Getting started: 
     - gc-installation.md
-    - gc-quick-start.md 
+    - gc-quick-start.md
+
   - Usage and Options:
     - usage-options-summary.md
     - usage-api-spec.md
@@ -51,6 +54,7 @@ nav:
 
   - Validation Output:
     - example responses: validation-curl.md
+
   - About:
     - 'License': 'license.md'
     - 'Release Notes': 'release-notes.md'
