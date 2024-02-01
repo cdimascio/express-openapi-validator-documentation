@@ -9,7 +9,7 @@ theme:
     # primary: indigo
   features:
     # - navigation.sections
-    - navigation.tracking
+    # - navigation.tracking
     - content.tabs.link
     - navigation.tabs
     - navigation.tabs.sticky
@@ -30,8 +30,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 nav:
-  - Home: 
-    - index.md
+  - index.md
   - Getting started: 
     - gc-installation.md
     - gc-quick-start.md 
