@@ -69,3 +69,8 @@ nav:
   - About:
     - license.md
     - about-who-are-we.md
+
+extra:
+  analytics:
+    provider: google
+    property: G-SZZ6RXH2FY
