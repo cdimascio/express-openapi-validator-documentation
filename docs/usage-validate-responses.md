@@ -9,7 +9,8 @@ Determines whether the validator should validate responses. Additionally, it acc
     validateResponses: false | true | {
         removeAdditional: 'failing',
         coerceTypes: true | false | 'array',
-        onError: (error, body, req): void
+        onError: (error, body, req): void,
+        allErrors: false | true,
     }
     ```
 
@@ -50,3 +51,20 @@ Determines whether the validator should validate responses. Additionally, it acc
                 }
             }
             ```
+
+    - ### `allErrors`
+
+        > This option was introduced in version 5.4.0, where the default behavior of response validation was changed to stop after the first failure.
+
+        Determine's whether all validation rules should be checked and all failures reported. By default, validation stops after the first failure. This option passes through to AJV, see [AJV Options: allErrors](https://ajv.js.org/options.html#allerrors).
+
+        **Do NOT use allErrors in production**  
+        Following the [recommended best practices by AJV](https://ajv.js.org/security.html#security-risks-of-trusted-schemas), this option should be left unset, or set to `false` in production to help mitigate slow validations and potential ReDOS attacks.
+
+        **Option Schema**
+        ```javascript
+        allErrors: false | true
+        ```
+
+        - `true` - all rules should be checked and all failures reported
+        - `false` - (**default**) stop checking rules after the first failure
