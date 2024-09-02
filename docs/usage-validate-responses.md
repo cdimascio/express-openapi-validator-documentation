@@ -54,7 +54,7 @@ Determines whether the validator should validate responses. Additionally, it acc
 
     - ### `allErrors`
 
-        > This option was introduced in version 5.4.0, where the default behavior of response validation was changed to stop after the first failure.
+        > This option was introduced in version 5.3.4, where the default behavior of response validation was changed to stop after the first failure.
 
         Determine's whether all validation rules should be checked and all failures reported. By default, validation stops after the first failure. This option passes through to AJV, see [AJV Options: allErrors](https://ajv.js.org/options.html#allerrors).
 
