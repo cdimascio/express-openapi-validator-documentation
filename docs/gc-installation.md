@@ -25,7 +25,7 @@ yarn add express-openapi-validator
 
 ## OpenAPI 3.1 (support) alpha
 
-_Replace x with the latest alpha version_
+_Replace <X> with the [latest](https://www.npmjs.com/package/express-openapi-validator?activeTab=versions) alpha version_
 
 ```shell
 npm install express-openapi-validator@6.0.0-alpha.<X>
