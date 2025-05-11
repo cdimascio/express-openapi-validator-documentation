@@ -34,7 +34,7 @@
 - [NestJS](https://github.com/cdimascio/express-openapi-validator/tree/master/examples/9-nestjs)
 [Koa](https://github.com/cdimascio/express-openapi-validator/tree/lerna-fastify/packages/koa-openapi-validator) and [Fastify](https://github.com/cdimascio/express-openapi-validator/tree/lerna-fastify/packages/fastify-openapi-validator) now available! 🚀
 - [OAS 3.1](https://github.com/cdimascio/express-openapi-validator/pull/882) supporr available in `>=v5.4.0`!
-- [Express 5](https://expressjs.com/en/5x/api.html) support available in `>=v5.5.0`!_
+- [Express 5](https://expressjs.com/en/5x/api.html) support available in `>=v5.5.0`!
 
 **Support the project:**
 
