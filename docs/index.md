@@ -1,7 +1,7 @@
 # 🦋 express-openapi-validator
 
-[![example workflow](https://github.com/cdimascio/express-openapi-validator/actions/workflows/default.yml/badge.svg)](#) [![](https://img.shields.io/npm/v/express-openapi-validator.svg)](https://www.npmjs.com/package/express-openapi-validator) [![](https://img.shields.io/npm/dm/express-openapi-validator?color=blue)](https://www.npmjs.com/package/express-openapi-validator) [![All Contributors](https://img.shields.io/github/contributors/cdimascio/express-openapi-validator
-)](#contributors) [![Coverage Status](https://coveralls.io/repos/github/cdimascio/express-openapi-validator/badge.svg?branch=master)](https://coveralls.io/github/cdimascio/express-openapi-validator?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1570a06f609345ddb237114bbd6ceed7)](https://www.codacy.com/manual/cdimascio/express-openapi-validator?utm_source=github.com&utm_medium=referral&utm_content=cdimascio/express-openapi-validator&utm_campaign=Badge_Grade) [![](https://img.shields.io/gitter/room/cdimascio-oss/community?color=%23eb205a)](https://gitter.im/cdimascio-oss/community) [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/cdimascio/express-openapi-validator) [![](https://img.shields.io/badge/documentation-yes-informational)](https://cdimascio.github.io/express-openapi-validator-documentation/) [![](https://img.shields.io/badge/license-MIT-blue.svg)](#license) [![GitHub stars](https://img.shields.io/github/stars/cdimascio/express-openapi-validator.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/cdimascio/express-openapi-validator/stargazers/) [![Twitter URL](https://img.shields.io/twitter/url/https/github.com/cdimascio/express-openapi-validator.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20express-openapi-validator%20by%20%40CarmineDiMascio%20https%3A%2F%2Fgithub.com%2Fcdimascio%2Fexpress-openapi-validator%20%F0%9F%91%8D)
+[![build workflow](https://github.com/cdimascio/express-openapi-validator/actions/workflows/default.yml/badge.svg)](#) [![](https://img.shields.io/npm/v/express-openapi-validator.svg)](https://www.npmjs.com/package/express-openapi-validator) [![](https://img.shields.io/npm/dm/express-openapi-validator?color=blue)](https://www.npmjs.com/package/express-openapi-validator) [![All Contributors](https://img.shields.io/github/contributors/cdimascio/express-openapi-validator
+)](#contributors) [![Coverage Status](https://coveralls.io/repos/github/cdimascio/express-openapi-validator/badge.svg?branch=master)](https://coveralls.io/github/cdimascio/express-openapi-validator?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1570a06f609345ddb237114bbd6ceed7)](https://www.codacy.com/manual/cdimascio/express-openapi-validator?utm_source=github.com&utm_medium=referral&utm_content=cdimascio/express-openapi-validator&utm_campaign=Badge_Grade) [![](https://img.shields.io/gitter/room/cdimascio-oss/community?color=%23eb205a)](https://gitter.im/cdimascio-oss/community) [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/cdimascio/express-openapi-validator)  [![](https://img.shields.io/badge/documentation-yes-informational)](https://cdimascio.github.io/express-openapi-validator-documentation/) [![](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
 
 **An OpenApi validator for ExpressJS** that automatically validates **API** _**requests**_ and _**responses**_ using an **OpenAPI 3** specification.
 
@@ -21,6 +21,7 @@
 - ✂️ **\$ref** support; split specs over multiple files
 - 🎈 file upload
 - ✏️ OpenAPI 3.0.x and 3.1.x spec support
+- ✨ Express 4 and 5 support
 
   
 **Docs:**
@@ -31,7 +32,8 @@
 
 - [NestJS](https://github.com/cdimascio/express-openapi-validator/tree/master/examples/9-nestjs)
 [Koa](https://github.com/cdimascio/express-openapi-validator/tree/lerna-fastify/packages/koa-openapi-validator) and [Fastify](https://github.com/cdimascio/express-openapi-validator/tree/lerna-fastify/packages/fastify-openapi-validator) now available! 🚀
-- [OAS 3.1 (beta)](https://github.com/cdimascio/express-openapi-validator/pull/882) is available in `>=v5.4.0`!
+- [OAS 3.1](https://github.com/cdimascio/express-openapi-validator/pull/882) supporr available in `>=v5.4.0`!
+- [Express 5](https://expressjs.com/en/5x/api.html) support available in `>=v5.5.0`!_
 
 **Support the project:**
 
