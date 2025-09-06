@@ -11,6 +11,7 @@ Determines whether the validator should validate requests.
         coerceTypes: false | true | 'array',
         removeAdditional: false | true | 'all' | 'failing',
         allErrors: false | true,
+        discriminator: false | true,
     }
     ```
 
@@ -100,3 +101,34 @@ Determines whether the validator should validate requests.
 
         - `true` - all rules should be checked and all failures reported
         - `false` - (**default**) stop checking rules after the first failure
+
+    - ### `discriminator`
+    
+      > This option was introduced in version 5.6.0 to extend support for OpenAPI discriminators.
+    
+      Enables validation of schemas that use OpenAPI `discriminator` fields with `oneOf` / `anyOf`.
+    
+      By default, only **top-level discriminators** are supported.  
+      When this option is enabled, the validator also supports **deep (nested) discriminators** inside `oneOf` / `anyOf` structures.
+    
+      **Option Schema**
+        ```javascript
+        discriminator: false | true
+        ```
+    
+        - `true` – enable validation of both top-level and deep discriminators
+        - `false` – (**default**) only top-level discriminators are validated
+    
+      **Example**
+        ```javascript
+        app.use(
+          OpenApiValidator.middleware({
+            apiSpec,
+            validateRequests: {
+              discriminator: true,
+            }
+          })
+        );
+        ```
+        
+        

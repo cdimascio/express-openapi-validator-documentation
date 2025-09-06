@@ -31,8 +31,20 @@ A path like `/files/some/long/path` will pass validation. The Express `req.param
 
 ### **Q:** Can I use discriminators with `oneOf` and `anyOf`?
 
-Currently, there is support for top level discriminators. See [top-level discriminator example](https://github.com/cdimascio/express-openapi-validator/tree/master/examples/8-top-level-discriminator)
+- By default, only **top-level discriminators** are supported. See the [top-level discriminator example](https://github.com/cdimascio/express-openapi-validator/tree/master/examples/8-top-level-discriminator).
+- To also enable **deep discriminator** support (nested within `oneOf` / `anyOf`), set the `discriminator` option under `validateRequests`:
 
+```js
+app.use(
+    OpenApiValidator.middleware({
+        apiSpec,
+        validateRequests: {
+            discriminator: true,
+            //... other options
+        }
+    })
+);
+```
 ---
 
 ### **Q:** What happened to the `securityHandlers` property?
