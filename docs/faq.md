@@ -34,7 +34,7 @@ A path like `/files/some/long/path` will pass validation. The Express `req.param
 - By default, only **top-level discriminators** are supported. See the [top-level discriminator example](https://github.com/cdimascio/express-openapi-validator/tree/master/examples/8-top-level-discriminator).
 - To also enable **deep discriminator** support (nested within `oneOf` / `anyOf`), set the `discriminator` option under `validateRequests`:
 
-```js
+```javascript
 app.use(
     OpenApiValidator.middleware({
         apiSpec,
